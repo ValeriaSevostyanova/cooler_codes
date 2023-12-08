@@ -18,17 +18,17 @@ fig, ax = plt.subplots(layout='constrained') # фигура и оси диагр
 for attribute, measurement in penguin_means.items(): # создаем столбчатые диаграммы не менять
     offset = width * multiplier
     rects = ax.bar(x + offset, measurement, width, label=attribute, align='edge') # устанавливаем с помощью align выравнивание диаграммам 
-    ax.bar_label(rects, padding=1) #                                                чтобы они не вылезали за границы
+    ax.bar_label(rects, padding=1) #                                                чтобы они не вылезали за границы не менять
     multiplier += 1
 
 
-ax.set_ylabel('Percent') # названия устанавливаем
-ax.set_xlabel('ID') #      тут тоже
+ax.set_ylabel('Percent') # названия устанавливаем не менять
+ax.set_xlabel('ID') #      тут тоже не менять
 
-ax.set_xticks(x + width, species) # расстояние между двумя разными диаграммами (по айди разными)
-ax.legend(loc='upper right', ncols=3) # устанавливаем надпись cups и water (показываем что каким цветом обозначаем)
-ax.set_ylim(0, 100) # предел по у
-ax.set_xlim(0, n)   # предел по х
+ax.set_xticks(x + width, species) # расстояние между двумя разными диаграммами (по айди разными)  не менять
+ax.legend(loc='upper right', ncols=3) # устанавливаем надпись cups и water (показываем что каким цветом обозначаем) не менять
+ax.set_ylim(0, 100) # предел по у не менять
+ax.set_xlim(0, n)   # предел по х не менять
 
-plt.savefig('result.png') # сохраняем диаграммы в файл result.png
-#plt.show() # показываем диаграммы (можно и не показывать)
+plt.savefig('result.png') # сохраняем диаграммы в файл result.png не менять
+# plt.show() # показываем диаграммы (можно и не показывать) не менять ну тут вообще по желанию

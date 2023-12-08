@@ -3,7 +3,7 @@ import numpy as np
 
 import random
 
-n = 6#random.randint(1, 25) # необходимо поменять на кол-во кулеров менять
+n = random.randint(1, 25) # необходимо поменять на кол-во кулеров менять
 species = [str(i) for i in range(1, n + 1)] # запонение айди (нужно для графика) не менять
 penguin_means = {
     'Water': [random.randint(1, 100) for _ in range(n)], # данные из таблицы (в процентах) менять
